@@ -1,5 +1,5 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def home(request):
-	return HttpResponse('Avaliacao 360')
+	return render(request, 'index.html')
