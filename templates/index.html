@@ -1,5 +1,11 @@
 {% extends 'base.html' %}
+{% load bootstrap %}
 {% block main %}
 	Home page
-	>>{{STATIC_URL}}
+	<form method="POST" action="." class="form-group">
+                        {% csrf_token %}
+                        {{form|bootstrap}}
+                        <input type="submit" class="btn btn-primary"/>
+                        <a type="button"  href="{% url 'register' %}" class="btn btn-success">Register</a>
+             </form>
 {% endblock %}
