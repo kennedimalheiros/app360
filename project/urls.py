@@ -22,8 +22,9 @@ urlpatterns = [
             {'template_name': 'index.html'}, name='url_login'),
 
     url(r'^registrar$', 'project.views.register', name='register'),
-    #url(r'^accounts/profile/$', 'PlayEnglish.views.home_barra',
-    #   name='url_home_barra'),
+    
+    url(r'^accounts/profile/$', 'project.views.dashboard',
+    name='url_dashborard'),
 
     url(r'^logout/$', 'django.contrib.auth.views.logout',
         {'template_name': 'index.html'}, name='url_logout'),
