@@ -1,10 +1,10 @@
 from setuptools import setup
 
-setup(name='YourAppName',
-      version='1.0',
-      description='OpenShift App',
-      author='Your Name',
-      author_email='example@example.com',
-      url='http://www.python.org/sigs/distutils-sig/',
-#      install_requires=['Django>=1.3'],
-     )
+setup(name='avaliacao360',
+    version='0.1.2',
+    description='Projeto Avaliação 360',
+    author='Gregory Pacheco',
+    author_email='contato@gregorypacheco.com.br',
+    url='http://avaliacao360-gpzim98.rhcloud.com/',
+    install_requires=['Django==1.8.2',],
+)

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+{% block main %}
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h3>Registro de novo usuário</h3>
+        <form method="POST" action="." class="form-group">
+                        {% csrf_token %}
+                        {{form|bootstrap}}
+                        <input type="submit" class="btn btn-primary"/>
+                        <a type="button"  href="register" class="btn btn-success">Register</a>
+             </form>
+      </div>
+
+    </div> <!-- /container -->
+
+    
+    
+{% endblock %}
