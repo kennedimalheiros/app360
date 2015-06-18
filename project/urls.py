@@ -1,13 +1,19 @@
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.views.generic.edit import CreateView
+from django.contrib.auth.forms import UserCreationForm
 
 
 urlpatterns = [
     url(r'^$', 'django.contrib.auth.views.login',
             {'template_name': 'index.html'}, name='url_login'),
 
-    url(r'^register$', 'project.views.register', name='register'),
-    url(r'^confirm_register/$', 'project.views.confirm_register', name='confirm_register'),
+    url(r'^register/', CreateView.as_view(
+            template_name='registration/register.html',
+            form_class=UserCreationForm,
+            success_url='/',
+    )),
+    url(r'^accounts/', include('django.contrib.auth.urls')),
 
 
     url(r'^accounts/profile/$', 'project.views.dashboard',
@@ -15,9 +21,6 @@ urlpatterns = [
 
     url(r'^logout/$', 'django.contrib.auth.views.logout',
         {'template_name': 'registration/logout.html'}, name='url_logout'),
-
-    url(r'^accounts/login/$', 'django.contrib.auth.views.login',
-        {'template_name': 'index.html'}, name='url_login'),
 
     # Change Password URLs:
     url(r'^accounts/password_change/$', 
