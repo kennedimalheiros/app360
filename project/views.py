@@ -28,6 +28,8 @@ def confirm_register(request):
 def dashboard(request):
 	return render(request, 'dashboard.html')
 
+def evaluation(request):
+    return render(request, 'evaluation.html')
 
 def password_confirmation(request, template_name='registration/reset_succefull.html'):
     return render(request, template_name, {})
