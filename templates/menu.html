@@ -23,13 +23,13 @@
                 <li role="separator" class="divider"></li>
                 <li class="dropdown-header">Avaliações e questionários</li>
                 <li><a href="#">Questões</a></li>
-                <li><a href="#">Avaliações</a></li>
+                <li><a href="{% url 'url_evaluation' %}">Avaliações</a></li>
               </ul>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="{% url 'password-change' %}">Alterar senha</a></li>
-            <li><a href="{% url 'url_logout' %}">Sair</a></li>
+            <li><a href="{% url 'url_logout' %}"  >Sair</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
