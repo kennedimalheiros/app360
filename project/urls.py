@@ -28,5 +28,8 @@ urlpatterns = [
     'template_name': 'registration/password_change_done.html'
     }, name="password-change-done"),
 
+    url(r'^accounts/profile/evaluation/$', 'project.views.evaluation',
+    name='url_evaluation'),
+
     url(r'^admin/', include(admin.site.urls)),
 ]
