@@ -1,7 +1,7 @@
 from django.contrib import admin
-from models import Office
+from core360.models import Office
 from core360.models import Department
-from models import Employee
+from core360.models import Employee
 
 # Register your models here.
 admin.site.register(Office)
