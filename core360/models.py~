@@ -2,7 +2,25 @@ from django.db import models
 
 # Create your models here.
 class Cargo(models.Model):
-	nome=models.CharField(max_length=100)
+	name = models.CharField(max_length=100)
+	level = models.IntegerField()
 
 	def __unicode__(self):
-		return self.nome
+		return self.name
+
+class Department(models.Model):
+	description = models.CharField(max_length=100)
+	
+	def __unicode__(self):
+		return self.description
+
+class Employee(models.Model);
+	name = models.CharField(max_length=100)
+	boss = 	models.ForeignKey(Employee, null)
+	department = models.ForeignKey(Department)
+	cargo = models.ForeignKey(Cargo)
+	user = models.CharField(max_length=100)
+	password = models.CharField(max_length=30)
+	
+	def __unicode__(self):
+		return self.name

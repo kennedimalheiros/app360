@@ -8,6 +8,8 @@ urlpatterns = [
     url(r'^$', 'django.contrib.auth.views.login',
             {'template_name': 'index.html'}, name='url_login'),
 
+      url(r'^core360/', include('core360.urls')),
+
     url(r'^register/', CreateView.as_view(
             template_name='registration/register.html',
             form_class=UserCreationForm,
