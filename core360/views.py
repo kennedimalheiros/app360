@@ -1,8 +1,14 @@
 from django.shortcuts import render
-from core360.models import Department
+from core360.models import Office, Department, Employee, Quiz, Evaluation, Options, Question
 from django.shortcuts import render, redirect, get_object_or_404
 from core360.forms import DepartmentForm
 from django.contrib.auth.decorators import login_required
+
+@login_required
+def dashboard(request):
+    data = {}
+    data['evaluation_list'] = Evaluation.objects.filter(person_will_answer_form__user=request.user)
+    return render(request, 'core360/dashboard.html', data)
 
 @login_required
 def department_list(request):
@@ -34,3 +40,9 @@ def department_delete(request, pk, template_name='core360/confirm_delete.html'):
         department.delete()
         return redirect('url_avaliacoes_department')
     return render(request, template_name, {'object':department})
+
+@login_required
+def evaluation (request):
+    data = {}
+    data['evaluation_list'] = Evaluation.objects.filter(person_will_answer_form__user=request.user)
+    return render(request, 'core360/evaluation.html', data)

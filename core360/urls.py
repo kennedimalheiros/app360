@@ -3,6 +3,12 @@ from django.conf.urls import include, url
 
 
 urlpatterns = [
+    url(r'^$',
+        'core360.views.dashboard',
+        name='url_avaliacoes_home'),
+    url(r'^evaluation/$',
+        'core360.views.evaluation',
+        name='url_avaliacoes_evaluation'),
     url(r'^department/$',
         'core360.views.department_list', 
         name='url_avaliacoes_department'),

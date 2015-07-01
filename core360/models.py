@@ -1,4 +1,4 @@
-#coding:utf-8
+# coding:utf-8
 from django.db import models
 from django import forms
 from django.contrib.auth.models import User
@@ -9,6 +9,9 @@ class Office(models.Model):
 
 	def __str__(self):
 		return self.name
+	class Meta:
+		verbose_name = 'Cargo'
+		verbose_name_plural = 'Cargos'
 
 class Department(models.Model):
 	description = models.CharField(max_length=100)
@@ -17,6 +20,9 @@ class Department(models.Model):
 	
 	def __str__(self):
 		return self.description + ' - ' + self.phone
+	class Meta:
+		verbose_name = 'Departamento'
+		verbose_name_plural = 'Departamentos'
 
 class Employee(models.Model):
 	user = models.OneToOneField(User)
@@ -35,8 +41,8 @@ class Quiz(models.Model):
 	
 	title = models.CharField(max_length=40)	
 	registration_date = models.DateField(blank=False)	
-	employee = models.ManyToManyField(Employee, related_name='Avaliado')
-	description_of_work = models.TextField(max_length=500, null=True, blank=True)
+	employee = models.ManyToManyField(Employee, related_name='Avaliado', help_text='Funcionário que vai participar deste questionário.')
+	description_of_work = models.TextField(max_length=500, null=True, blank=True, help_text='Descrição do Questionário.')
 
 	def __str__(self):
 		return self.title
@@ -46,11 +52,13 @@ class Quiz(models.Model):
 		verbose_name_plural = 'Questionários'
 
 class Evaluation(models.Model):
-	employee_assessed = models.ForeignKey(Employee)
-	person_will_answer_form = models.ForeignKey(Employee, related_name = 'avaliador')
+	employee_assessed = models.ForeignKey(Employee, help_text='Funcionários que será avaliado.')
+	person_will_answer_form = models.ForeignKey(Employee, related_name = 'avaliador', help_text='Avaliador.')
 	registration_date = models.DateField()	
-	quiz  = models.ForeignKey(Quiz)
+	quiz  = models.ForeignKey(Quiz, help_text='Questionário que será aplicado.')
 	
+	def __str__(self):
+		return 'Avaliações'
 
 	class Meta:
 		verbose_name = 'Avaliação'
