@@ -46,3 +46,10 @@ def evaluation (request):
     data = {}
     data['evaluation_list'] = Evaluation.objects.filter(person_will_answer_form__user=request.user)
     return render(request, 'core360/evaluation.html', data)
+
+@login_required
+def evaluation_respond(request, pk_evaluation):
+    data = {}
+    evaluation = get_object_or_404(Evaluation, pk=pk_evaluation)
+    data['evaluation'] = evaluation
+    return render(request, 'avaliacoes/evaluation_respond.html', data)

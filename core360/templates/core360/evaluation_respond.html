@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+
+
+{% block main %}
+    <h3>Questões</h3>
+    {% for question in evaluation.quiz.all %}
+    	<a href="/avaliacoes/question_respond/{{question.id}}/{{rating.id}}">
+    	    {{question.description}}
+    	</a><br>
+    {% endfor %}
+{% endblock%}

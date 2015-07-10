@@ -21,4 +21,8 @@ urlpatterns = [
     url(r'^delete/(?P<pk>\d+)$',
         'core360.views.department_delete',
         name='url_department_delete'),
+    
+    url(r'^evaluation_respond/(?P<pk_evaluation>\d+)/$',
+        'core360.views.evaluation_respond',
+        name='url_evaluation'),    
 ]

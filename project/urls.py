@@ -20,7 +20,7 @@ urlpatterns = [
     url(r'^logout/$', 'django.contrib.auth.views.logout',
         {'template_name': 'registration/logout.html'}, name='url_logout'),
 
-    url(r'^accounts/profile/$', 'project.views.dashboard',
+    url(r'^accounts/profile/$', 'core360.views.dashboard',
     name='url_dashborard'),
 
     url(r'^change-password/$', 'django.contrib.auth.views.password_change', {

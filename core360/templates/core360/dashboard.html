@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block main %}
+	<table id="table_id" class="display">
+	    <thead>
+	        <tr>
+	            <th>Funcionário que será avaliado.</th>
+	            <th>Data</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+	{% for evaluation in evaluation_list %}
+	        <tr>
+	            <td>{{evaluation.employee_assessed}}</td>
+	            <td>{{evaluation.registration_date}}</td>
+	            <td>
+	            		<a >
+	            			<a href="{% url 'url_rating' rate.id %}"> {{rate.description}}</a>
+	            			<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+	            		</a>
+	            	</td>
+	        </tr>
+	{% endfor %}
+	    </tbody>
+	</table>
+{% endblock %}
