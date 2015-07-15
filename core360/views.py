@@ -116,6 +116,15 @@ def reports(request):
     data['answers'] = answers
     return render(request, 'core360/report.html', data)
 
+@login_required
+def reports_boss(request):
+    data = {}
+    answers = Answer.objects.filter(
+       evaluation__employee_assessed__boss__user = request.user, answer__isnull=False)
+#    import pdb; pdb.set_trace()
+    data['answers'] = answers
+    return render(request, 'core360/reports_boss.html', data)
+
 
 @login_required
 def listar_clientes_cadastrados(request):

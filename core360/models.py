@@ -79,7 +79,6 @@ class Evaluation(models.Model):
 	registration_date = models.DateField()	
 #	quiz  = models.ForeignKey(Quiz, help_text='Questionário que será aplicado.')
 	questions = models.ManyToManyField(Question)
-	finalize = models.BooleanField(default=False)
 	
 	def __str__(self):
 		return 'Avaliações'

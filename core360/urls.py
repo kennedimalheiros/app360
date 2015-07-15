@@ -35,4 +35,7 @@ urlpatterns = [
         'core360.views.reports',
         name='url_avaluation_reports'),
 
+    url(r'^reports_boss/$',
+        'core360.views.reports_boss',
+        name='url_avaluation_reports_boss'),
 ]
