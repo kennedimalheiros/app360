@@ -42,7 +42,6 @@ class Quiz(models.Model):
 	title = models.CharField(max_length=40)	
 	registration_date = models.DateField(blank=False)	
 	employee = models.ManyToManyField(Employee, related_name='Avaliado', help_text='Funcionário que vai participar deste questionário.')
-	description_of_work = models.TextField(max_length=500, null=True, blank=True, help_text='Descrição do Questionário.')
 
 	def __str__(self):
 		return self.title
@@ -50,19 +49,6 @@ class Quiz(models.Model):
 	class Meta:
 		verbose_name = 'Questionário'
 		verbose_name_plural = 'Questionários'
-
-class Evaluation(models.Model):
-	employee_assessed = models.ForeignKey(Employee, help_text='Funcionários que será avaliado.')
-	person_will_answer_form = models.ForeignKey(Employee, related_name = 'avaliador', help_text='Avaliador.')
-	registration_date = models.DateField()	
-	quiz  = models.ForeignKey(Quiz, help_text='Questionário que será aplicado.')
-	
-	def __str__(self):
-		return 'Avaliações'
-
-	class Meta:
-		verbose_name = 'Avaliação'
-		verbose_name_plural = 'Avaliações'
 
 class Options(models.Model):
 	text = models.CharField(max_length=100)
@@ -76,7 +62,7 @@ class Options(models.Model):
 
 class Question(models.Model):
 	text = models.CharField(max_length=500)
-	quiz = models.ManyToManyField(Quiz)
+	#quiz = models.ManyToManyField(Quiz)
 	options = models.ManyToManyField(Options)	
 
 	def __str__(self):
@@ -85,3 +71,35 @@ class Question(models.Model):
 	class Meta:
 		verbose_name = 'Questão'
 		verbose_name_plural = 'Questões'
+
+class Evaluation(models.Model):
+	description = models.CharField(max_length=100)
+	employee_assessed = models.ForeignKey(Employee, help_text='Funcionários que será avaliado.')
+	person_will_answer_form = models.ForeignKey(Employee, related_name = 'avaliador', help_text='Avaliador.')
+	registration_date = models.DateField()	
+#	quiz  = models.ForeignKey(Quiz, help_text='Questionário que será aplicado.')
+	questions = models.ManyToManyField(Question)
+	finalize = models.BooleanField(default=False)
+	
+	def __str__(self):
+		return 'Avaliações'
+
+	class Meta:
+		verbose_name = 'Avaliação'
+		verbose_name_plural = 'Avaliações'
+		
+class Answer(models.Model):
+	evaluation = models.ForeignKey(Evaluation)
+	question = models.ForeignKey(Question)
+	answer = models.ForeignKey(Options, blank=True, null=True)
+
+	def __str__(self):
+		return 'Status: ' + str(self.respondida)
+
+	@property
+	def respondida(self):
+		return 'Aberta' if not self.answer else 'Respondida'
+	
+#	@property
+  #  	def person_will_answer_form(self):
+    #    		return self.evaluation.person_will_answer_form.user.username

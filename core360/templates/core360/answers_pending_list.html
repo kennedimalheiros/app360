@@ -1,25 +1,25 @@
 {% extends 'base.html' %}
+{% load bootstrap %}
 
 {% block main %}
-	{% if evaluations %}
-	<h1>Testes pendentes de avaliação</h1>
 	<table id="table_id" class="display">
+	<h1>Questões pendentes deste teste</h1>
 	    <thead>
 	        <tr>
-	            <th>ID teste</th>
-	            <th>Nome do teste</th>
+	            <th>ID answer</th>
+	            <th>Enunciado</th>
 	            <th>Colaborador avaliado</th>
 	            <th>Responder</th>
 	        </tr>
 	    </thead>
 	    <tbody>
-	{% for answer in evaluations %}
+	{% for answer in answers %}
 	        <tr>
-	            <td>{{answer.evaluation.id}}</td>
-	            <td>{{answer.evaluation.description}}</td>
+	            <td>{{answer.id}}</td>
+	            <td>{{answer.question.text}}</td>
 	            <td>{{answer.evaluation.employee_assessed}}</td>
 	            <td>
-	            		<a href="{% url 'url_evaluation_respond' answer.evaluation.id %}">
+	            		<a href="{% url 'url_answers' answer.id %}">
 	            			<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
 	            		</a>
 	            	</td>
@@ -27,8 +27,5 @@
 	{% endfor %}
 	    </tbody>
 	</table>
-	{% else %}
-		<h1>Parabéns, você respondeu todas as suas avaliações!</h1>
-	{% endif %}
 
 {% endblock %}

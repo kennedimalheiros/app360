@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block main %}
+	<table id="table_id" class="display">
+	    <thead>
+	        <tr>
+	            <th>Descrição Avaliação</th>
+	            <th>Questão</th>
+	            <th>Avaliação</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+	{% for answer in answers %}
+	        <tr>
+	            <td>{{answer.evaluation.description}}</td>
+	            <td>{{answer.question.text}}</td>
+	            <td>{{answer.answer.text}}</td>
+	        </tr>
+	{% endfor %}
+	    </tbody>
+	</table>
+
+{% endblock %}
