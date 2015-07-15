@@ -5,6 +5,7 @@
 	    <thead>
 	        <tr>
 	            <th>Descrição Avaliação</th>
+	             <th>Avaliador</th>
 	            <th>Avaliado na questão</th>
 	            <th>Questão</th>
 	            <th>Avaliação</th>
@@ -14,6 +15,7 @@
 	{% for answer in answers %}
 	        <tr>
 	            <td>{{answer.evaluation.description}}</td>
+	            <td>{{answer.evaluation.person_will_answer_form}}</td>
 	            <td>{{answer.evaluation.employee_assessed}}</td>
 	            <td>{{answer.question.text}}</td>
 	            <td>{{answer.answer.text}}</td>
