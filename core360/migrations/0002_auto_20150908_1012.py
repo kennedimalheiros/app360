@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='evaluation',
             name='quiz',
-            field=models.ForeignKey(to='core360.Quiz', default=3, help_text='Questionário que será aplicado.'),
+            field=models.ForeignKey(to='core360.Quiz', default=2, help_text='Questionário que será aplicado.'),
             preserve_default=False,
         ),
         migrations.AddField(
