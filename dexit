@@ -1,0 +1,530 @@
+[33mcommit f0659648d790947ea6a84792f4fb56ed5d11b249[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Fri Jul 31 16:21:41 2015 -0300
+
+    removendo botão registro tela inicial, pois apenas o admin pode cadastra
+
+[33mcommit 57a1cdf627c78b9c4c3cebbbaba73ffa1e09a39c[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 17:08:54 2015 -0300
+
+    update title report
+
+[33mcommit 554ec9948e7cf98b3f48f0426da53558ddd63a1a[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 17:04:31 2015 -0300
+
+    update title report boss
+
+[33mcommit fc9ed027093ab251f44020e31d0fdcd91a0812b4[m
+Merge: 937eeab 21c5361
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 16:10:02 2015 -0300
+
+    Merge branch 'master' of https://github.com/kennedimalheiros/app360
+
+[33mcommit 937eeab04fd05f09a95ab00e4ba397bf355a2a0b[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 16:09:30 2015 -0300
+
+    Migrate initial
+
+[33mcommit 1eb03ac56f6f4770666d5190aaf3c5f63538f5c9[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 15:38:54 2015 -0300
+
+    limpando os migrations
+
+[33mcommit 21c536176fa421153e902ea65004670c46ad028f[m
+Author: Kennedi Malheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 15:33:47 2015 -0300
+
+    Delete 0006_auto_20150622_1614.pyc
+    
+    clear
+
+[33mcommit 15568ae8aab0b1f38a76580e5aa4cfbf9e185e4a[m
+Author: Kennedi Malheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 15:33:40 2015 -0300
+
+    Delete 0007_auto_20150622_1616.pyc
+    
+    clear
+
+[33mcommit b112c286f3797a54c476f0509d1e2280da67f0b0[m
+Author: Kennedi Malheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 15:33:27 2015 -0300
+
+    Delete 0008_auto_20150622_1617.pyc
+    
+    clear
+
+[33mcommit 3af1717709d1fc143ed787e3a11d6f0fe0d9b5c0[m
+Author: Kennedi Malheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 15:33:21 2015 -0300
+
+    Delete 0009_auto_20150622_1630.pyc
+    
+    clear
+
+[33mcommit 968d5884edac40ac094d9c8bf2e0090268c681c3[m
+Author: Kennedi Malheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 15:33:07 2015 -0300
+
+    Delete 0010_auto_20150622_1633.pyc
+    
+    clear
+
+[33mcommit 638548676541081b20fcbc71dd9907f4010a459b[m
+Author: Kennedi Malheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 15:33:01 2015 -0300
+
+    Delete 0011_auto_20150622_1640.pyc
+    
+    clear
+
+[33mcommit a8adc5b2deeb0b1f05fc5caa92f6f0e056ccf675[m
+Author: Kennedi Malheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 15:32:54 2015 -0300
+
+    Delete 0012_auto_20150622_1646.pyc
+    
+    clear
+
+[33mcommit 5cc025f355c930ec1e5ba4b954bafb6c8f03d6b0[m
+Author: Kennedi Malheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 15:32:46 2015 -0300
+
+    Delete 0013_auto_20150626_1521.pyc
+    
+    clear
+
+[33mcommit 065466d538c7df751b65ebbdc477634db9d88091[m
+Author: Kennedi Malheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 15:32:36 2015 -0300
+
+    Delete 0014_auto_20150626_1633.pyc
+    
+    clear
+
+[33mcommit 166e0155ed57235e9fe62f15af9aca4241405670[m
+Author: Kennedi Malheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 15:32:29 2015 -0300
+
+    Delete 0014_auto_20150626_1639.pyc
+    
+    clear
+
+[33mcommit 777d2a4d45c4844189f89855ca1ddcd71a7687ce[m
+Author: Kennedi Malheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 15:32:03 2015 -0300
+
+    Delete 0014_auto_20150626_1643.pyc
+    
+    clear
+
+[33mcommit 51420bb1999c9b36a54219359c9badea82974446[m
+Author: Kennedi Malheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 15:31:56 2015 -0300
+
+    Delete 0014_auto_20150626_1651.pyc
+    
+    clear
+
+[33mcommit 2c005a83340c2b5bc50459ab9f0ca49f448b360e[m
+Author: Kennedi Malheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 15:31:48 2015 -0300
+
+    Delete 0015_auto_20150629_1120.pyc
+    
+    clear
+
+[33mcommit ed28332835ee4e6535f0642e0987bbe7f0962897[m
+Author: Kennedi Malheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 15:31:40 2015 -0300
+
+    Delete 0015_auto_20150629_1202.pyc
+    
+    clear
+
+[33mcommit ad44406a6f3c725d7896842e045af8f7312f2f2d[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 15 15:21:57 2015 -0300
+
+    Relatório do coordenador
+
+[33mcommit b1330a4600ab706510a3ef26bf6ee7aaff08d030[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Tue Jul 14 21:21:33 2015 -0300
+
+    Gravando resposta de questionario ok
+
+[33mcommit 3a7b89adcd97f2b0854ceecdbf4cf162704f5acf[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Fri Jul 10 16:36:57 2015 -0300
+
+    atualizando
+
+[33mcommit 2d1f4ce84ad032f8aec44d64d934e6440e628a69[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Fri Jul 10 16:33:09 2015 -0300
+
+    git
+
+[33mcommit d23d6f1477b92b9f5366fb912c3ecc04e888e077[m
+Merge: defab17 1f72162
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Fri Jul 10 16:21:07 2015 -0300
+
+    Merge branch 'master' of https://github.com/kennedimalheiros/app360
+
+[33mcommit 1f72162cc63f9f531c3fd825ada39cb5dece6b88[m
+Author: Kennedi Malheiros <kennedimalheiros@gmail.com>
+Date:   Fri Jul 10 16:19:41 2015 -0300
+
+    Delete .gitignore
+
+[33mcommit defab170266acd47f908084038fc7378ee735377[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Fri Jul 10 15:07:53 2015 -0300
+
+    atualizando
+
+[33mcommit e65a7872c134ced9e76677e8f477948ceda62162[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Wed Jul 1 00:53:40 2015 -0300
+
+    implement evaluation
+
+[33mcommit 0b6d0256d2b2308f2cb56130608ff82a593670bc[m
+Author: Kennedi Malheiros <kennedimalheiros@gmail.com>
+Date:   Mon Jun 29 12:24:08 2015 -0300
+
+    Update .gitignore
+
+[33mcommit 0b50134345cfdbce5a57015b0033789b0d285754[m
+Author: Kennedi Malheiros <kennedimalheiros@gmail.com>
+Date:   Mon Jun 29 12:23:57 2015 -0300
+
+    Update .gitignore
+
+[33mcommit 5dc3680c071b1e49d0da5e45bed329ba917b0f6f[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Mon Jun 29 12:21:44 2015 -0300
+
+    remocao de arquivo
+
+[33mcommit 4e3a00734e2fb7f6316f7468a7a50da687534b20[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Mon Jun 29 12:17:18 2015 -0300
+
+    update core model
+
+[33mcommit f0004330ece2bda1e900009238e5d12abfeaf574[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Fri Jun 26 16:14:06 2015 -0300
+
+    Bug
+
+[33mcommit 3e7d272e2c1ca4dca24da8233cf796284b8de90e[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Fri Jun 26 15:58:15 2015 -0300
+
+    implementing department
+
+[33mcommit 1b1399c6003c3c5d037887771c1632e1844fd03a[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Mon Jun 22 12:25:06 2015 -0300
+
+    create the core
+
+[33mcommit 5295b70000bb8722d506f7a9588b98c17da5fcf6[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Mon Jun 22 12:22:28 2015 -0300
+
+    link the evaluation
+
+[33mcommit d841bababbbecc6b6249276f8e1345c73a6f612d[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Mon Jun 22 12:18:58 2015 -0300
+
+    new view evaluation
+
+[33mcommit 70f92948b579ecec8e6ce8391a97187e4cf9ce42[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Mon Jun 22 12:18:20 2015 -0300
+
+    new url url_evaluation
+
+[33mcommit 2c91dea143e03060a80be3d35efd762bda9069d9[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Mon Jun 22 12:16:19 2015 -0300
+
+    new parameter core360 in INSTALLED_APPS
+
+[33mcommit eef5421a9f005e3bdea1f60c360dc35e6c675833[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Fri Jun 19 11:36:03 2015 -0300
+
+    alter title.
+
+[33mcommit 12d95f762b2019069067cf89684da609e99710c3[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Fri Jun 19 11:34:44 2015 -0300
+
+    database password change.
+
+[33mcommit 2d5c5aef086616454f1e33961b6d7cf0697e23a2[m
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Fri Jun 19 11:27:41 2015 -0300
+
+    alter parameters.
+
+[33mcommit 87d13b3f6133c614e1c113020164553a5bee5e8e[m
+Merge: 2210b0d 9c6a5ce
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Thu Jun 18 16:02:47 2015 -0300
+
+    Merge branch 'master' of https://github.com/kennedimalheiros/app360
+
+[33mcommit 2210b0dbb55db4bd94476acfae5037d7ad0c82de[m
+Merge: 55f31ee 6a4d330
+Author: kennedimalheiros <kennedimalheiros@gmail.com>
+Date:   Thu Jun 18 10:36:51 2015 -0300
+
+    Merge branch 'master' of https://github.com/Gpzim98/360
+
+[33mcommit 9c6a5ce9185cb20916721d69c3b76418b545ab09[m
+Author: Kennedi Malheiros <kennedimalheiros@gmail.com>
+Date:   Thu Jun 18 09:23:53 2015 -0300
+
+    Initial commit
+
+[33mcommit 6a4d3304b56bb54cb1d5342fb8e1bc2532c4db65[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Thu Jun 18 00:14:16 2015 -0300
+
+    Implements done of change password of django user
+
+[33mcommit 2100b531641f27480111327d023ba407ec3ccf2b[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Wed Jun 17 23:46:06 2015 -0300
+
+    Register of users is done, and add the faviico.ico
+
+[33mcommit fc9665e3f85a022b8d9f3129add0e022ff133f3e[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Wed Jun 17 23:10:36 2015 -0300
+
+    Returning template register
+
+[33mcommit 0f1fa463dcf92b201c912d3ff28331a21213a63a[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Wed Jun 17 23:02:43 2015 -0300
+
+    Returning DEBUG to False
+
+[33mcommit 8c6a0f5803d9aa0b7a7860096c840a8ff03b3b2d[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Wed Jun 17 23:00:48 2015 -0300
+
+    Problem possible solved
+
+[33mcommit 0a4fb36aeffa54fb7fef03495d1c2c3d1b0a8acb[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Wed Jun 17 22:59:28 2015 -0300
+
+    Problem possible solved
+
+[33mcommit f0edca3af2e8b3e76cd155e31cd69f3b21a99db6[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Wed Jun 17 22:57:49 2015 -0300
+
+    Problem possible solved
+
+[33mcommit 5047497c5baf395b7c3abcc6a2da12d916c2391c[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Wed Jun 17 22:55:39 2015 -0300
+
+    Include dependence test pyExcelerator to test install_requires directive
+
+[33mcommit c2a670b1d0207fcc828e7cdedf6c83633bb2d9ea[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Wed Jun 17 22:52:03 2015 -0300
+
+    Include dependence test pyExcelerator to test install_requires directive
+
+[33mcommit 0cd657e0d1278635803a08f2fb858fe62e820469[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Wed Jun 17 22:50:11 2015 -0300
+
+    Include dependence test pyExcelerator to test install_requires directive
+
+[33mcommit e117413ffb220992cfe42d22ad9178eef5985266[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Wed Jun 17 22:46:29 2015 -0300
+
+    Include dependence test pyExcelerator to test install_requires directive
+
+[33mcommit f7af6f833f9e75dbbd5cc80524a089b0911de4f7[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Wed Jun 17 22:43:07 2015 -0300
+
+    Try fix issue on OpenShift
+
+[33mcommit 55f31ee2c65c07407e465b65b9636499bca1ba86[m
+Author: Template builder <builder@example.com>
+Date:   Wed Jun 17 14:53:50 2015 -0400
+
+    Creating template
+
+[33mcommit 55dd68b73047739d86a551eedd28f0daca7306f3[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Tue Jun 16 23:35:46 2015 -0300
+
+    Login e logout Ok
+
+[33mcommit e0405ea334401e4d38bc519ff70c7b5621e54180[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Tue Jun 16 23:05:13 2015 -0300
+
+    change way of access static files
+
+[33mcommit 6f487e9ca41f608fee6968d9f45cbe0f9302648f[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Tue Jun 16 22:53:17 2015 -0300
+
+    Try aggin because the last push dont word, I make a loggin in app and install django-bootstrap-form by myself
+
+[33mcommit 3a9054f2a5af728515feb1f821ddaa53b76a525a[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Tue Jun 16 22:50:49 2015 -0300
+
+    Pre configuration of urls of loggin by django auth and integration with django-boostrap-form
+
+[33mcommit 983cdb7b2b49c81befa5d1b3dfed2ad6350b1ceb[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Tue Jun 16 22:33:26 2015 -0300
+
+    Fixing problem with static files link
+
+[33mcommit 558f9855e7fecf2eccae8636558809c3755c5d18[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Tue Jun 16 22:20:51 2015 -0300
+
+    Make ingration with bootstrap
+
+[33mcommit 5030dc8bb8e0b70da14767f1002a9e92ba88971d[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Tue Jun 16 21:59:28 2015 -0300
+
+    Change settings to use Postgres local
+
+[33mcommit 426ec3efa1e6f7b89c8690f6dc1f9ad3aa8802ae[m
+Merge: 3d4c83c 8df1371
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Tue Jun 16 00:29:13 2015 -0300
+
+    merge README.md
+
+[33mcommit 3d4c83cf71421c43c71bbeed4c4291f729f972f8[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Tue Jun 16 00:24:46 2015 -0300
+
+    Iniciando os trabalhos
+
+[33mcommit 83e3a21c2f5e7a2fb16ee2704da1d30ebd486376[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Tue Jun 16 00:24:27 2015 -0300
+
+    Iniciando os trabalhos
+
+[33mcommit a6e43e29fa76360000be42eee963f247a97bb5ba[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Tue Jun 16 00:17:30 2015 -0300
+
+    ..
+
+[33mcommit e6fa9fb61007e5bad90190848f29308b83d2a627[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Tue Jun 16 00:15:04 2015 -0300
+
+    ..
+
+[33mcommit 22000e1e865b2470d5e7f8fd5eb40acacae260b0[m
+Merge: 4b89177 c6c09b4
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Tue Jun 16 00:13:25 2015 -0300
+
+    Merge branch 'master' of https://github.com/Gpzim98/Django-OpenShift-1.8
+
+[33mcommit 4b891777fed8a6c6bbe67bcc6166e27094bd99e8[m
+Author: Template builder <builder@example.com>
+Date:   Mon Jun 15 23:08:44 2015 -0400
+
+    Creating template
+
+[33mcommit 8df1371fe918228cde430bff1977ada924b34eb9[m
+Author: Gpzim98 <gpzim98@gmail.com>
+Date:   Mon Jun 15 23:37:00 2015 -0300
+
+    Initial commit
+
+[33mcommit c6c09b4038c3ab5fa4fe0347187aba0f5db9f767[m
+Merge: 77fc097 d2c28d2
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Mon Jun 15 23:35:23 2015 -0300
+
+    Merge branch 'master' of github.com:Gpzim98/Django-OpenShift-1.8
+
+[33mcommit 77fc0978af7842f626850fa03eb33838cd3bdf7d[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Mon Jun 15 23:35:06 2015 -0300
+
+    Fix requirements
+
+[33mcommit d2c28d25859a56c91843072389d8fb772d944934[m
+Author: Gpzim98 <gpzim98@gmail.com>
+Date:   Mon Jun 15 23:34:13 2015 -0300
+
+    Update README.md
+
+[33mcommit b4d57ecb679f23c8c82f59ad62a2cf7cad402137[m
+Author: Gpzim98 <gpzim98@gmail.com>
+Date:   Mon Jun 15 23:19:13 2015 -0300
+
+    Finish
+    
+    Finish
+
+[33mcommit 9c458b36347dac1e3dd954a305451b656582681a[m
+Author: Gpzim98 <gpzim98@gmail.com>
+Date:   Mon Jun 15 23:18:12 2015 -0300
+
+    Make the READ.me
+    
+    Simple READ.me
+
+[33mcommit a6f01fb6f9eaad1f2851e22f69600ac8edabebd3[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Mon Jun 15 23:10:57 2015 -0300
+
+    Get ready more configurations
+
+[33mcommit f9112da33e99a1c3c1259e04496ca99580770101[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Mon Jun 15 23:05:54 2015 -0300
+
+    Configuring settings and add requirements file
+
+[33mcommit 5270274a18958cb749490df2eb5a8982fb9d9ef7[m
+Author: gpzim98 <gpzim98@gmail.com>
+Date:   Mon Jun 15 22:27:03 2015 -0300
+
+    First commit
+
+[33mcommit 2c56cfdb5191e0edd3979a41e39adb14ba4a6974[m
+Author: Gpzim98 <gpzim98@gmail.com>
+Date:   Mon Jun 15 21:55:19 2015 -0300
+
+    Initial commit

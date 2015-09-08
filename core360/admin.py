@@ -18,20 +18,20 @@ class EmployeeInline(admin.StackedInline):
 class UserAdmin(UserAdmin):
     inlines = (EmployeeInline, )
 
-class RatingAdmin(admin.ModelAdmin):
+class EvaluationAdmin(admin.ModelAdmin):
     model = Evaluation
-    list_display = ('id', 'description')
+    list_display = ('id', 'description','employee_assessed','person_will_answer_form','quiz')
    # exclude = ['categories']
 
 
     def save_model(self, request, obj, form, change):
-        super(RatingAdmin, self).save_model(request, obj, form, change)
+        super(EvaluationAdmin, self).save_model(request, obj, form, change)
         obj.save()
         form.save_m2m()
         
         # Verify if obj is a new tuple
         if not change:
-            for question in obj.questions.all():
+            for question in obj.quiz.question.all():
                 answer = Answer(question=question, evaluation=obj)
                 answer.save()
 
@@ -46,7 +46,7 @@ class AnswerAdmin(admin.ModelAdmin):
 admin.site.register(Department, DepartmentAdmin)
 admin.site.unregister(User)
 admin.site.register(User, UserAdmin)
-admin.site.register(Evaluation, RatingAdmin)
+admin.site.register(Evaluation, EvaluationAdmin)
 admin.site.register(Question)
 admin.site.register(Options)
 admin.site.register(Answer, AnswerAdmin )

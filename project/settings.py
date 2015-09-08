@@ -118,7 +118,7 @@ else:
                 'ENGINE': 'django.db.backends.postgresql_psycopg2',  
                 'NAME':     'avaliacao360',
                 'USER':     'postgres',
-                'PASSWORD': 'kpsm2907',
+                'PASSWORD': 'senha',
                 'HOST':     'localhost',
                 'PORT':     5432,
             }
