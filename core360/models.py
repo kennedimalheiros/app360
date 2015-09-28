@@ -25,11 +25,12 @@ class Department(models.Model):
         verbose_name_plural = 'Departamentos'
 
 class Employee(models.Model):
-    user = models.OneToOneField(User)
-    name = models.CharField(max_length=100)
-    boss = models.ForeignKey( 'self', null=True, blank=True, help_text='Responsável', related_name='employee_boss' )
-    department = models.ForeignKey(Department)
-    office = models.ForeignKey(Office)
+    user = models.OneToOneField(User, verbose_name='Usuário')
+    name = models.CharField(max_length=100, verbose_name='Nome')
+    boss = models.ForeignKey( 'self', null=True, blank=True, help_text='Responsável (opcional)', 
+        related_name='employee_boss', verbose_name='Responsável' )
+    department = models.ForeignKey(Department, verbose_name='Departamento')
+    office = models.ForeignKey(Office, verbose_name='Cargo')
 	
     def __str__(self):
         return self.name
@@ -38,7 +39,7 @@ class Employee(models.Model):
         verbose_name_plural = 'Funcionários'
 
 class Options(models.Model):
-    text = models.CharField(max_length=100)
+    text = models.CharField(max_length=100, verbose_name='Descrição Opção')
 
     def __str__(self):
         return self.text
@@ -48,9 +49,9 @@ class Options(models.Model):
         verbose_name_plural = 'Opções'
 
 class Question(models.Model):
-    text = models.CharField(max_length=500)
+    text = models.CharField(max_length=500, verbose_name='Texto')
     #quiz = models.ManyToManyField(Quiz)
-    options = models.ManyToManyField(Options)	
+    options = models.ManyToManyField(Options, verbose_name='Opções')	
 
     def __str__(self):
         return self.text
@@ -62,10 +63,10 @@ class Question(models.Model):
 
 class Quiz(models.Model):
 	
-    title = models.CharField(max_length=40)	
-    registration_date = models.DateField(blank=False)	
+    title = models.CharField(max_length=40, verbose_name='Titulo')
+    registration_date = models.DateField(blank=False, verbose_name='Data Criação')
  #  employee = models.ManyToManyField(Employee, related_name='Avaliado', help_text='Funcionário que vai participar deste questionário.')
-    question = models.ManyToManyField(Question, related_name = 'questionario_questao')
+    question = models.ManyToManyField(Question, related_name = 'questionario_questao', verbose_name='Questões')
 
     def __str__(self):
         return self.title
@@ -76,10 +77,12 @@ class Quiz(models.Model):
 
 class Evaluation(models.Model):
     description = models.CharField(max_length=100, verbose_name='Descrição')
-    employee_assessed = models.ForeignKey(Employee, help_text='Funcionários que será avaliado.', verbose_name='Avaliado')
-    person_will_answer_form = models.ForeignKey(Employee, related_name = 'avaliador', help_text='Avaliador.', verbose_name='Avaliador')
-    registration_date = models.DateField()	
-    quiz  = models.ForeignKey(Quiz, help_text='Questionário que será aplicado.')
+    employee_assessed = models.ForeignKey(Employee, 
+        help_text='Funcionários que será avaliado.', verbose_name='Avaliado')
+    person_will_answer_form = models.ForeignKey(Employee, 
+        related_name = 'avaliador', help_text='Avaliador.', verbose_name='Avaliador')
+    registration_date = models.DateField(verbose_name='Data Cadastro')	
+    quiz  = models.ForeignKey(Quiz, help_text='Questionário que será aplicado.', verbose_name='Questionário')
  #  questions = models.ManyToManyField(Question)
 	
     def __str__(self):
